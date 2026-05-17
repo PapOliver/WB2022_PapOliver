@@ -1,0 +1,12 @@
+ var serverKapcsolat = new MySqlConnectionStringBuilder { Server = "127.0.0.1", Database = "name", UserID = "root", Password = "mysql" };
+ MySqlConnection kapcsolat;
+ kapcsolat = new MySqlConnection(serverKapcsolat.ConnectionString);
+ kapcsolat.Open();
+
+var olvaso = lekerdezes.ExecuteReader();
+olvaso.Close();
+
+olvaso.GetInt
+olvaso.getDouble
+olvaso.GetString
+
