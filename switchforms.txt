@@ -1,0 +1,33 @@
+ public class SwitchFormsContext : ApplicationContext
+ {
+     public SwitchFormsContext()
+     {
+         ShowForm1();
+     }
+
+     private void ShowForm1()
+     {
+         var form1 = new Form1();
+         form1.FormClosed += (s, e) =>
+         {
+             if (form1.DialogResult == DialogResult.OK)
+                 ShowForm2();
+             else
+                 ExitThread();
+         };
+         form1.Show();
+     }
+
+     private void ShowForm2()
+     {
+         var form2 = new Form2();
+         form2.FormClosed += (s, e) =>
+         {
+             if (form2.DialogResult == DialogResult.Retry)
+                 ShowForm1();
+             else
+                 ExitThread();
+         };
+         form2.Show();
+     }
+ }
