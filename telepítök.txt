@@ -1,0 +1,32 @@
+Laravel
+
+composer create-project --prefer-dist laravel/laravel tutorial
+
+composer require laravel/ui
+
+php artisan ui vue --auth
+
+php artisan megrate
+
+composer -i
+
+npm i
+
+
+
+copmoser global require laravel/installer
+
+laravel new tutorial
+
+
+
+VueJs
+
+npm init vue@latest ( Set-ExecutionPolicy RemoteSigned -Scope CurrentUser)
+
+npm i
+
+npm run dev
+
+
+
