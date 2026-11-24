@@ -1,0 +1,16 @@
+default JavasScript filne Laravelben: (https://dhruvilblog.hashnode.dev/how-to-integrate-vuejs-with-laravel)
+
+
+import Vue from 'vue';
+import ExampleComponent from './components/ExampleComponent.vue';
+
+const app = new Vue({
+    el: '#app',
+    components: {
+        ExampleComponent
+    }
+});
+
+
+
+
